@@ -1,0 +1,77 @@
+# Project 2 – SSH Intrusion Prevention using Fail2Ban
+
+## Overview
+
+This project demonstrates automated prevention of SSH brute-force attacks using Fail2Ban, with detection and validation performed through Wazuh SIEM monitoring.
+
+Unlike Project 1 (Detection Only), this project focuses on:
+
+- Intrusion Prevention
+- Automated Containment
+- Firewall Enforcement
+- SIEM-based Validation
+
+---
+
+## Lab Architecture
+
+Attacker:
+- Kali Linux
+
+Target:
+- Ubuntu Server 24.04
+- Wazuh SIEM (All-in-one deployment)
+- Fail2Ban (Host-based IPS)
+
+---
+
+## Attack Lifecycle
+
+1. SSH brute-force attack simulated using Hydra.
+2. Multiple authentication failures detected.
+3. Fail2Ban threshold exceeded (5 attempts).
+4. Attacker IP automatically banned.
+5. SSH connections blocked.
+6. Wazuh confirmed reduced event activity.
+
+---
+
+## Security Controls Implemented
+
+- SSH log monitoring
+- Automated IP banning
+- Firewall rule enforcement
+- SIEM correlation
+- Post-containment validation
+
+---
+
+## Key Outcomes
+
+- Successfully blocked brute-force attack automatically.
+- Verified containment through log analysis.
+- Demonstrated layered security approach (Detection + Prevention).
+- No successful compromise occurred.
+
+---
+
+## Skills Demonstrated
+
+- Linux System Administration
+- SSH Security Hardening
+- Intrusion Detection & Prevention
+- Log Analysis
+- Fail2Ban Configuration
+- Wazuh SIEM Monitoring
+- Threat Simulation & Validation
+
+---
+
+## Evidence
+
+Screenshots included in the `screenshots/` directory demonstrate:
+
+- Active SSH jail
+- Attacker IP ban
+- Authentication spike before ban
+- Reduced activity after containment

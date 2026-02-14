@@ -36,7 +36,7 @@ The focus of this project is:
 
 Hydra was used to simulate an SSH brute-force attack:
 
-# Hydra Command - hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://192.168.71.130
+Hydra Command - hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://192.168.71.130
 
 
 ### Result:

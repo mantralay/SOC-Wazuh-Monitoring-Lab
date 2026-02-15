@@ -1,0 +1,22 @@
+<!-- Local custom rules -->
+<group name="ssh_bruteforce,custom,">
+
+  <!-- Rule 100100: Single failed SSH login -->
+  <rule id="100100" level="8">
+    <if_sid>5710</if_sid>
+    <description>Custom Alert: SSH failed login detected</description>
+    <mitre>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+
+  <!-- Rule 100200: Threshold-based brute force detection -->
+  <rule id="100200" level="12" frequency="5" timeframe="60">
+    <if_matched_sid>100100</if_matched_sid>
+    <description>High Alert: SSH brute-force attack detected (5 failures in 60 seconds)</description>
+    <mitre>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+
+</group>

@@ -11,6 +11,9 @@ All projects were built in a controlled virtual lab environment using Ubuntu Ser
 **Objective:**  
 Detect SSH brute-force attacks using Wazuh SIEM.
 
+➡ **View Project:**  
+[Open Project 1](Project-1-SSH-Bruteforce-Detection)
+
 **Key Activities:**
 - Simulated SSH brute-force attack using Hydra
 - Generated 1000+ failed authentication attempts
@@ -31,6 +34,9 @@ Detect SSH brute-force attacks using Wazuh SIEM.
 **Objective:**  
 Implement automated response to block brute-force attackers.
 
+➡ **View Project:**  
+[Open Project 2](Project-2-SSH-Intrusion-Prevention)
+
 **Key Activities:**
 - Installed and configured Fail2Ban
 - Configured SSH jail rules
@@ -50,6 +56,9 @@ Implement automated response to block brute-force attackers.
 
 **Objective:**  
 Detect unauthorized modification of critical system files using Wazuh FIM.
+
+➡ **View Project:**  
+[Open Project 3](Project-3-File-Integrity-Monitoring)
 
 **Key Activities:**
 - Enabled real-time File Integrity Monitoring

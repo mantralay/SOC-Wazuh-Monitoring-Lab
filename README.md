@@ -67,3 +67,5 @@ To build practical SOC Analyst skills through hands-on attack simulation, detect
 This lab demonstrates the complete attack lifecycle:
 
 Detection → Analysis → Containment → Validation
+
+

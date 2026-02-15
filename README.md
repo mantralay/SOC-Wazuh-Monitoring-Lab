@@ -1,71 +1,95 @@
-# SOC Wazuh Monitoring Lab
+# SOC Analyst Projects – Wazuh SIEM Lab
 
-This repository contains hands-on SOC Analyst projects built in a controlled virtual lab environment using Wazuh SIEM.
+This repository contains hands-on SOC Analyst lab projects demonstrating detection, prevention, and investigation of security threats using Wazuh SIEM.
 
-The objective of this lab is to simulate real-world attack scenarios and perform detection, investigation, and prevention using industry-standard tools.
+All projects were built in a controlled virtual lab environment using Ubuntu Server and VMware.
 
 ---
 
-## Lab Environment
+# 🔹 Project 1 – SSH Brute-Force Detection
+
+**Objective:**  
+Detect SSH brute-force attacks using Wazuh SIEM.
+
+**Key Activities:**
+- Simulated SSH brute-force attack using Hydra
+- Generated 1000+ failed authentication attempts
+- Observed authentication failure spikes
+- Analyzed alert severity and timestamps
+- Mapped detection to MITRE ATT&CK (T1110 – Brute Force)
+
+**Skills Demonstrated:**
+- SIEM monitoring
+- Log analysis
+- Attack simulation
+- SOC alert investigation
+
+---
+
+# 🔹 Project 2 – SSH Intrusion Prevention (Fail2Ban)
+
+**Objective:**  
+Implement automated response to block brute-force attackers.
+
+**Key Activities:**
+- Installed and configured Fail2Ban
+- Configured SSH jail rules
+- Triggered brute-force attack
+- Verified automatic IP banning
+- Observed prevention logs in Wazuh
+
+**Skills Demonstrated:**
+- Intrusion prevention
+- Linux security hardening
+- Automated incident response
+- Log validation and monitoring
+
+---
+
+# 🔹 Project 3 – File Integrity Monitoring (FIM)
+
+**Objective:**  
+Detect unauthorized modification of critical system files using Wazuh FIM.
+
+**Key Activities:**
+- Enabled real-time File Integrity Monitoring
+- Modified `/etc/hosts` to simulate attacker tampering
+- Detected checksum change (Rule 550)
+- Investigated hash differences and timestamps
+- Performed SOC-style alert analysis
+
+**Detection Details:**
+- Rule ID: 550
+- Alert Level: 7
+- Description: Integrity checksum changed
+
+**Skills Demonstrated:**
+- File Integrity Monitoring configuration
+- Real-time alert detection
+- Hash comparison analysis
+- Incident validation
+- MITRE ATT&CK mapping
+
+---
+
+# 🛠 Lab Environment
 
 - Ubuntu Server 24.04
 - Wazuh SIEM (All-in-one deployment)
-- Kali Linux (Attacker)
-- VMware Virtualization
-- SSH Service
-- Hydra (Attack Simulation)
-- Fail2Ban (Intrusion Prevention)
+- VMware Workstation
+- Kali Linux (Attack simulation)
+- Hydra
+- Fail2Ban
 
 ---
 
-## Projects Included
+# 📚 Skills Gained From This Portfolio
 
-### 🔍 Project 1 – SSH Brute-Force Detection
-Focus: Detection & Investigation
-
-- Simulated SSH brute-force attack
-- Generated 1000+ failed authentication attempts
-- Analyzed authentication failure spikes
-- Mapped alerts to MITRE ATT&CK (T1110)
-- Performed SOC-style log investigation
-
-➡ View Project:  
-`Project-1-SSH-Bruteforce-Detection/`
-
----
-
-### 🔐 Project 2 – SSH Intrusion Prevention
-Focus: Automated Containment & Validation
-
-- Configured Fail2Ban for SSH protection
-- Automatically banned attacker IP
-- Enforced firewall-level blocking
-- Validated containment using Wazuh SIEM
-- Demonstrated layered security approach
-
-➡ View Project:  
-`Project-2-SSH-Intrusion-Prevention/`
-
----
-
-## Skills Demonstrated
-
-- SIEM Deployment & Monitoring
-- Log Analysis & Alert Investigation
-- SSH Security Hardening
-- Intrusion Detection & Prevention
+- SIEM Deployment & Configuration
+- Log Monitoring & Alert Triage
+- Brute-force Detection
+- Intrusion Prevention
+- File Integrity Monitoring
 - MITRE ATT&CK Mapping
-- Linux System Administration
-- Incident Response Validation
-
----
-
-## Objective
-
-To build practical SOC Analyst skills through hands-on attack simulation, detection, investigation, and automated prevention.
-
-This lab demonstrates the complete attack lifecycle:
-
-Detection → Analysis → Containment → Validation
-
-
+- Linux Administration
+- SOC-Level Investigation & Documentation

@@ -37,21 +37,6 @@ It increases severity to level 10 to simulate high-priority SOC alerting.
 
 ---
 
-## 📂 Folder Structure
-
-Project-4-Custom-Wazuh-Rule-Engineering/
-│
-├── rules/
-│ └── local_rules.xml
-│
-├── investigation/
-│ └── analysis.md
-│
-└── screenshots/
-
-
----
-
 ## 📊 Validation Steps
 
 1. Created custom rule in `/var/ossec/etc/rules/local_rules.xml`

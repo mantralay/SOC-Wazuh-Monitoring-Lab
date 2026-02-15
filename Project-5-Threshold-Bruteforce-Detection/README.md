@@ -53,6 +53,8 @@ This project uses rule chaining and threshold correlation:
 
 </group>
 
+```
+
 ---
 
 ## 🚨 Attack Simulation
